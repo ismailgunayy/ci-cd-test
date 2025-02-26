@@ -1,10 +1,9 @@
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ismailgunayy/ci-cd-test:latest
     ports:
       - "8080:8080"
+    container_name: ci-cd-test
 
   watchtower:
     image: containrrr/watchtower
